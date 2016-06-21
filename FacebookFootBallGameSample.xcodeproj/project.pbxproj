@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		533505641D191A6B0040C9AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533505631D191A6B0040C9AC /* AppDelegate.swift */; };
+		533505661D191A6B0040C9AC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 533505651D191A6B0040C9AC /* GameScene.sks */; };
+		533505681D191A6B0040C9AC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533505671D191A6B0040C9AC /* GameScene.swift */; };
+		5335056A1D191A6B0040C9AC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533505691D191A6B0040C9AC /* GameViewController.swift */; };
+		5335056D1D191A6B0040C9AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5335056B1D191A6B0040C9AC /* Main.storyboard */; };
+		5335056F1D191A6B0040C9AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5335056E1D191A6B0040C9AC /* Assets.xcassets */; };
+		533505721D191A6B0040C9AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533505701D191A6B0040C9AC /* LaunchScreen.storyboard */; };
+		5335057A1D1936C40040C9AC /* FootballNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533505791D1936C40040C9AC /* FootballNode.swift */; };
+		5335057C1D193BF30040C9AC /* FootballScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335057B1D193BF30040C9AC /* FootballScene.swift */; };
+		5335057E1D1942CD0040C9AC /* FootBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335057D1D1942CD0040C9AC /* FootBallViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		533505601D191A6B0040C9AC /* FacebookFootBallGameSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookFootBallGameSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		533505631D191A6B0040C9AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		533505651D191A6B0040C9AC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		533505671D191A6B0040C9AC /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		533505691D191A6B0040C9AC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5335056C1D191A6B0040C9AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5335056E1D191A6B0040C9AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		533505711D191A6B0040C9AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		533505731D191A6B0040C9AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		533505791D1936C40040C9AC /* FootballNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FootballNode.swift; sourceTree = "<group>"; };
+		5335057B1D193BF30040C9AC /* FootballScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FootballScene.swift; sourceTree = "<group>"; };
+		5335057D1D1942CD0040C9AC /* FootBallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FootBallViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5335055D1D191A6B0040C9AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		533505571D191A6B0040C9AC = {
+			isa = PBXGroup;
+			children = (
+				533505621D191A6B0040C9AC /* FacebookFootBallGameSample */,
+				533505611D191A6B0040C9AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		533505611D191A6B0040C9AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				533505601D191A6B0040C9AC /* FacebookFootBallGameSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		533505621D191A6B0040C9AC /* FacebookFootBallGameSample */ = {
+			isa = PBXGroup;
+			children = (
+				533505631D191A6B0040C9AC /* AppDelegate.swift */,
+				533505651D191A6B0040C9AC /* GameScene.sks */,
+				533505671D191A6B0040C9AC /* GameScene.swift */,
+				533505691D191A6B0040C9AC /* GameViewController.swift */,
+				5335057D1D1942CD0040C9AC /* FootBallViewController.swift */,
+				533505791D1936C40040C9AC /* FootballNode.swift */,
+				5335057B1D193BF30040C9AC /* FootballScene.swift */,
+				5335056B1D191A6B0040C9AC /* Main.storyboard */,
+				5335056E1D191A6B0040C9AC /* Assets.xcassets */,
+				533505701D191A6B0040C9AC /* LaunchScreen.storyboard */,
+				533505731D191A6B0040C9AC /* Info.plist */,
+			);
+			path = FacebookFootBallGameSample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5335055F1D191A6B0040C9AC /* FacebookFootBallGameSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 533505761D191A6B0040C9AC /* Build configuration list for PBXNativeTarget "FacebookFootBallGameSample" */;
+			buildPhases = (
+				5335055C1D191A6B0040C9AC /* Sources */,
+				5335055D1D191A6B0040C9AC /* Frameworks */,
+				5335055E1D191A6B0040C9AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FacebookFootBallGameSample;
+			productName = FacebookFootBallGameSample;
+			productReference = 533505601D191A6B0040C9AC /* FacebookFootBallGameSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		533505581D191A6B0040C9AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Yang Tun-Kai";
+				TargetAttributes = {
+					5335055F1D191A6B0040C9AC = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 5335055B1D191A6B0040C9AC /* Build configuration list for PBXProject "FacebookFootBallGameSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 533505571D191A6B0040C9AC;
+			productRefGroup = 533505611D191A6B0040C9AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5335055F1D191A6B0040C9AC /* FacebookFootBallGameSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5335055E1D191A6B0040C9AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533505661D191A6B0040C9AC /* GameScene.sks in Resources */,
+				533505721D191A6B0040C9AC /* LaunchScreen.storyboard in Resources */,
+				5335056F1D191A6B0040C9AC /* Assets.xcassets in Resources */,
+				5335056D1D191A6B0040C9AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5335055C1D191A6B0040C9AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533505681D191A6B0040C9AC /* GameScene.swift in Sources */,
+				5335057E1D1942CD0040C9AC /* FootBallViewController.swift in Sources */,
+				5335056A1D191A6B0040C9AC /* GameViewController.swift in Sources */,
+				5335057C1D193BF30040C9AC /* FootballScene.swift in Sources */,
+				5335057A1D1936C40040C9AC /* FootballNode.swift in Sources */,
+				533505641D191A6B0040C9AC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5335056B1D191A6B0040C9AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5335056C1D191A6B0040C9AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		533505701D191A6B0040C9AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				533505711D191A6B0040C9AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		533505741D191A6B0040C9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		533505751D191A6B0040C9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		533505771D191A6B0040C9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FacebookFootBallGameSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sparkr.FacebookFootBallGameSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		533505781D191A6B0040C9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FacebookFootBallGameSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sparkr.FacebookFootBallGameSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5335055B1D191A6B0040C9AC /* Build configuration list for PBXProject "FacebookFootBallGameSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533505741D191A6B0040C9AC /* Debug */,
+				533505751D191A6B0040C9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		533505761D191A6B0040C9AC /* Build configuration list for PBXNativeTarget "FacebookFootBallGameSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533505771D191A6B0040C9AC /* Debug */,
+				533505781D191A6B0040C9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 533505581D191A6B0040C9AC /* Project object */;
+}

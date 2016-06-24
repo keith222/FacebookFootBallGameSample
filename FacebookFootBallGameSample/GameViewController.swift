@@ -18,12 +18,20 @@ class GameViewController: UIViewController {
         let view = SKView(frame: vc.view.frame)
         vc.view = view
         vc.view.backgroundColor = UIColor.whiteColor()
-        view.showsFPS = true
-        view.showsNodeCount = true
-        view.showsPhysics = true
-        let size = self.view.frame.size
+        let size = CGSizeMake(768,1024)
         let scene = FootballScene(size: size)
         view.presentScene(scene)
+        
+        // Configure the view.
+        let skView = self.view as! SKView
+        
+        /* Sprite Kit applies additional optimizations to improve rendering performance */
+        skView.ignoresSiblingOrder = true
+        
+        /* Set the scale mode to scale to fit the window */
+        scene.scaleMode = .AspectFill
+        
+        skView.presentScene(scene)
     }
 
     override func shouldAutorotate() -> Bool {

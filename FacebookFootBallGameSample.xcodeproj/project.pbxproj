@@ -17,6 +17,7 @@
 		5335057A1D1936C40040C9AC /* FootballNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533505791D1936C40040C9AC /* FootballNode.swift */; };
 		5335057C1D193BF30040C9AC /* FootballScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335057B1D193BF30040C9AC /* FootballScene.swift */; };
 		5335057E1D1942CD0040C9AC /* FootBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335057D1D1942CD0040C9AC /* FootBallViewController.swift */; };
+		5362E3451D1CE7AD00EF5570 /* SceneBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5362E3441D1CE7AD00EF5570 /* SceneBoundary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		533505791D1936C40040C9AC /* FootballNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FootballNode.swift; sourceTree = "<group>"; };
 		5335057B1D193BF30040C9AC /* FootballScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FootballScene.swift; sourceTree = "<group>"; };
 		5335057D1D1942CD0040C9AC /* FootBallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FootBallViewController.swift; sourceTree = "<group>"; };
+		5362E3441D1CE7AD00EF5570 /* SceneBoundary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneBoundary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				533505631D191A6B0040C9AC /* AppDelegate.swift */,
+				5362E3441D1CE7AD00EF5570 /* SceneBoundary.swift */,
 				533505651D191A6B0040C9AC /* GameScene.sks */,
 				533505671D191A6B0040C9AC /* GameScene.swift */,
 				533505691D191A6B0040C9AC /* GameViewController.swift */,
@@ -157,6 +160,7 @@
 				5335057C1D193BF30040C9AC /* FootballScene.swift in Sources */,
 				5335057A1D1936C40040C9AC /* FootballNode.swift in Sources */,
 				533505641D191A6B0040C9AC /* AppDelegate.swift in Sources */,
+				5362E3451D1CE7AD00EF5570 /* SceneBoundary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +310,7 @@
 				533505781D191A6B0040C9AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

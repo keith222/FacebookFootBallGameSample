@@ -24,12 +24,12 @@ class FootballNode: SKLabelNode{
         text = "\u{26BD}"
         fontColor = UIColor.blackColor()
         fontSize = 200
-        physicsBody = SKPhysicsBody(circleOfRadius: 95, center: CGPointMake(0, 75))
+        physicsBody = SKPhysicsBody(circleOfRadius: 95, center: CGPointMake(0, 100))
         physicsBody?.affectedByGravity = false
         physicsBody?.restitution = 0.8
         physicsBody?.categoryBitMask = CollisionMask.Ball
         physicsBody?.collisionBitMask = CollisionMask.Boundary
-        appearBeforeRing = true
+        appearBeforeBoundry = true
         
     }
     
@@ -38,7 +38,7 @@ class FootballNode: SKLabelNode{
         fatalError("init(coder:) has not been implemented")
     }
     
-    var appearBeforeRing: Bool{
+    var appearBeforeBoundry: Bool{
         set {zPosition = newValue ? 1 : -1}
         get {return zPosition == 1}
     }
@@ -46,11 +46,14 @@ class FootballNode: SKLabelNode{
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.touchPoint = touches.first?.locationInNode(self)
         print("touchpoint:\(self.touchPoint)")
-        print("position: \(self.position)")
-        self.jump(touchPoint!, to: self.position)
+
+        if(self.touchPoint!.y < 50){
+            self.jump(touchPoint!, to: CGPointMake(0,50))
+        }
     }
     
     func jump(from: CGPoint, to:CGPoint){
+        print("jump!!")
         let dx = (to.x - from.x) / 2.5
         let dy = to.y - from.y
         let norm = sqrt(pow(dx, 2) + pow(dy, 2))
@@ -58,7 +61,7 @@ class FootballNode: SKLabelNode{
         physicsBody?.affectedByGravity = true
         let impulse = CGVectorMake(base * (dx/norm), base * (dy/norm))
         physicsBody?.applyImpulse(impulse)
-        let scaleDuration : NSTimeInterval = 1.1
+        let scaleDuration : NSTimeInterval = 5
         to.x - from.x > 0 ? runAction(SKAction.rotateByAngle(-1, duration: scaleDuration)) : runAction(SKAction.rotateByAngle(1, duration: scaleDuration))
     }
 
@@ -66,11 +69,11 @@ class FootballNode: SKLabelNode{
         physicsBody?.affectedByGravity = false
         physicsBody?.velocity = CGVectorMake(0, 0)
         physicsBody?.angularVelocity = 0
-        zPosition = 1
         zRotation = 0
-        position = pos
         xScale = 1
         yScale = 1
-        appearBeforeRing = true
+        appearBeforeBoundry = true
+        position = pos
+        removeAllActions()
     }
 }

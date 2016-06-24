@@ -33,11 +33,12 @@ class FootballScene: SKScene, SKPhysicsContactDelegate {
         addChild(self.newBoundaryNode())
         addChild(self.newScoreText())
         addChild(self.newBallNode())
+        physicsWorld.gravity = CGVectorMake(0, -25)
         physicsWorld.contactDelegate = self
     }
     
     func ballPosition() -> CGPoint{
-        return CGPointMake(CGRectGetMidX(frame), 50)
+        return CGPointMake(CGRectGetMidX(frame), 100)
     }
     
     func newScoreText() -> SKLabelNode{
@@ -83,4 +84,7 @@ class FootballScene: SKScene, SKPhysicsContactDelegate {
         score += 1
     }
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        print("touch:\(touches.first?.locationInView(self.view))")
+    }
 }

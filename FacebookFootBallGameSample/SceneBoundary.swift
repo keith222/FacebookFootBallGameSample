@@ -30,8 +30,8 @@ class SceneBoundary:SKNode {
     
     func initBoundary(frame:CGRect){
         boundary = SKShapeNode(rect:frame)
-        let l = SKPhysicsBody(edgeFromPoint: CGPointMake(0, frame.size.height), toPoint: CGPointMake(0, 0))
-        let r = SKPhysicsBody(edgeFromPoint: CGPointMake(frame.size.width, frame.size.height), toPoint: CGPointMake(frame.size.width, 0))
+        let l = SKPhysicsBody(edgeFromPoint: CGPointMake(80, frame.size.height), toPoint: CGPointMake(80, 0))
+        let r = SKPhysicsBody(edgeFromPoint: CGPointMake(frame.size.width - 70, frame.size.height), toPoint: CGPointMake(frame.size.width - 70, 0))
         boundary?.physicsBody = SKPhysicsBody(bodies: [l,r])
         boundary?.physicsBody?.affectedByGravity = false
         boundary?.physicsBody?.dynamic = false

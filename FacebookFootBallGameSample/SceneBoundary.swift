@@ -12,12 +12,6 @@ import SpriteKit
 class SceneBoundary:SKNode {
     
     var boundary: SKShapeNode?
-    var leftBoundary: SKShapeNode?
-    var rightBoundary: SKShapeNode?
-    var sensor: SKNode?
-    let rad:CGFloat = 200
-    let h:CGFloat = 10
-    var ring:SKShapeNode?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

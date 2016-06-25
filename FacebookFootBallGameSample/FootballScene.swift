@@ -8,7 +8,7 @@
 
 import SpriteKit
 
-class FootballScene: SKScene, SKPhysicsContactDelegate {
+class FootballScene: SKScene, SKPhysicsContactDelegate, clickDelegate {
 
     var contentCreated: Bool = false
     var ball: FootballNode?
@@ -16,7 +16,7 @@ class FootballScene: SKScene, SKPhysicsContactDelegate {
     var boundary: SceneBoundary?
     var score: Int = 0{
         didSet{
-            scoreText?.text = "Score: \(score)"
+            scoreText?.text = String(score)
         }
     }
     
@@ -32,6 +32,7 @@ class FootballScene: SKScene, SKPhysicsContactDelegate {
         
         addChild(self.newBoundaryNode())
         addChild(self.newScoreText())
+        addChild(self.newTitleText())
         addChild(self.newBallNode())
         physicsWorld.gravity = CGVectorMake(0, -25)
         physicsWorld.contactDelegate = self
@@ -44,12 +45,23 @@ class FootballScene: SKScene, SKPhysicsContactDelegate {
     func newScoreText() -> SKLabelNode{
         let n = SKLabelNode()
         self.scoreText = n
-        n.fontSize = 70
-        n.fontName = "helvetica"
-        n.fontColor = UIColor.blackColor()
-        n.text = "Score: 0"
+        n.fontSize = 150
+        n.fontColor = UIColor(red: 35/255, green: 75/255, blue: 255/255, alpha: 1.0)
+        n.fontName = "HelveticaNeue-ultralight"
+        n.text = "0"
         n.zPosition = -2
-        n.position = CGPointMake(CGRectGetMidX(frame), 500)
+        n.position = CGPointMake(CGRectGetMidX(frame), 750)
+        return n
+    }
+    
+    func newTitleText() -> SKLabelNode{
+        let n = SKLabelNode()
+        n.fontSize = 32
+        n.fontColor = UIColor.lightGrayColor()
+        n.text = "目前最高分"
+        n.fontName = "HelveticaNeue"
+        n.zPosition = -2
+        n.position = CGPointMake(CGRectGetMidX(frame), 900)
         return n
     }
     
@@ -58,6 +70,7 @@ class FootballScene: SKScene, SKPhysicsContactDelegate {
         self.ball = node
         node.position = ballPosition()
         node.userInteractionEnabled = true
+        node.delegate = self
         return node
     }
     
@@ -73,18 +86,17 @@ class FootballScene: SKScene, SKPhysicsContactDelegate {
     }
     
     override func update(currentTime: NSTimeInterval) {
-        //print("position y:\(ball?.position.y);height:\(self.frame.height)")
         if ball?.position.y < -200 {
-            print("ball position:\(ball?.position.y)")
+//            print("ball position:\(ball?.position.y)")
             resetBall()
+            score = 0
         }
     }
     
-    func didEndContact(contact: SKPhysicsContact) {
-        score += 1
+    func detectClick(isClicked: Bool) {
+        if isClicked{
+            score += 1
+        }
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        print("touch:\(touches.first?.locationInView(self.view))")
-    }
 }

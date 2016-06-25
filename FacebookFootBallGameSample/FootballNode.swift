@@ -15,9 +15,14 @@ struct CollisionMask {
     static let Sensor : UInt32 = 0b100
 }
 
+protocol clickDelegate {
+    func detectClick(isClicked:Bool)
+}
+
 class FootballNode: SKLabelNode{
     
     var touchPoint: CGPoint?
+    var delegate: clickDelegate?
     
     override init() {
         super.init()
@@ -30,7 +35,6 @@ class FootballNode: SKLabelNode{
         physicsBody?.categoryBitMask = CollisionMask.Ball
         physicsBody?.collisionBitMask = CollisionMask.Boundary
         appearBeforeBoundry = true
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -45,15 +49,15 @@ class FootballNode: SKLabelNode{
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.touchPoint = touches.first?.locationInNode(self)
-        print("touchpoint:\(self.touchPoint)")
-
+//        print("touchpoint:\(self.touchPoint)")
         if(self.touchPoint!.y < 50){
             self.jump(touchPoint!, to: CGPointMake(0,50))
+            delegate?.detectClick(true)
         }
     }
     
+    
     func jump(from: CGPoint, to:CGPoint){
-        print("jump!!")
         let dx = (to.x - from.x) / 2.5
         let dy = to.y - from.y
         let norm = sqrt(pow(dx, 2) + pow(dy, 2))

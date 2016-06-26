@@ -22,6 +22,7 @@ class SceneBoundary:SKNode {
         self.initBoundary(sceneFrame)
     }
     
+    //set left and right boundary
     func initBoundary(frame:CGRect){
         boundary = SKShapeNode(rect:frame)
         let l = SKPhysicsBody(edgeFromPoint: CGPointMake(80, frame.size.height), toPoint: CGPointMake(80, 0))
